@@ -1,0 +1,26 @@
+{
+    "name": "acms-vscode-highlighter",
+    "displayName": "acms-vscode-highlighter",
+    "description": "syntax highlight support for a-blog cms",
+    "version": "0.0.1",
+    "publisher": "appleple",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "source.html.acms",
+            "aliases": ["html (for a-blog cms)"],
+            "extensions": [".html"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "source.html.acms",
+            "scopeName": "source.html.acms",
+            "path": "./syntaxes/html.tmLanguage.json"
+        }]
+    }
+}
